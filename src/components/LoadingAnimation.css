@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+.loading-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+.spinner {
+    border: 2px solid rgba(255, 255, 255, 0.637);
+    border-top: 6px solid #044e7e;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 8s linear infinite; /* Cambiar a 4 segundos */
+    z-index: 10;
+}
+
+.loading_text{
+    font-family: 'Ubuntu', sans-serif;
+}
+  
+@keyframes spin {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(2880deg); }
+}
